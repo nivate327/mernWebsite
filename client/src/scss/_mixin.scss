@@ -1,0 +1,69 @@
+@mixin navfont
+{
+    font-family: 'Mukta', sans-serif;
+}
+
+@mixin logoFont
+{
+    font-family: 'Pacifico', cursive;
+}
+
+
+@mixin pop
+{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+@mixin navmargin
+{
+    margin: .8rem 1rem;
+}
+
+@mixin flex
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexbet
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+@mixin flexstart
+{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+
+@mixin shadow {
+    box-shadow: 0 0 5px $main;
+}
+
+@mixin comman1($par1)
+{
+    font-size: $par1;
+    letter-spacing: .1rem;
+    color: $gray;
+}
+
+@mixin comman2($par1)
+{
+    color: $par1;
+}
+
+@mixin common3
+{
+    @include comman2($white);
+
+    &:hover {
+        @include comman2($white);
+    }
+}

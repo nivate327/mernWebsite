@@ -1,0 +1,838 @@
+@import "_var.scss";
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+@import "_mixin.scss";
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    @include navfont;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+p {
+    margin: 0
+}
+
+.navbar {
+    border-bottom: 1px dashed rgb(207, 205, 205);
+    font-family: 'Poppins', sans-serif !important;
+    background-color: white;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.3rem;
+    @include navmargin;
+    color: $black;
+    letter-spacing: .1rem;
+
+    &:hover {
+        color: $main;
+    }
+}
+
+
+.navbar-brand {
+    @include logoFont;
+    text-transform: capitalize !important;
+}
+
+
+.fa-user {
+    font-size: 1.3rem;
+    color: $main;
+    margin-right: .6rem;
+}
+
+
+
+.signup {
+    @include comman2($main);
+    background-color: $main;
+    padding: .3rem 2rem !important;
+    font-size: 1.3rem !important;
+    @include navfont;
+    padding-top: .6rem !important;
+
+    &:hover {
+        @include comman2($white);
+        background-color: $main;
+    }
+
+}
+
+.nav-item .signup {
+    @include common3;
+}
+
+.btnR {
+    @include common3;
+}
+
+.edit {
+    @include common3;
+}
+
+
+.navbar-brand {
+    font-size: 2.1rem;
+    @include navmargin;
+    color: $black;
+    font-weight: 500;
+
+    &:hover {
+        color: $main;
+    }
+}
+
+
+
+.signUpform {
+    @include flex;
+    height: 80vh;
+    flex-direction: column;
+    margin-top: 6rem;
+    position: relative;
+}
+
+.ragister {
+    width: 60rem;
+    height: 38rem;
+    @include shadow;
+    padding: 2rem 3rem;
+    margin-top: 4rem;
+    border-radius: 0px;
+}
+
+.login {
+    width: 55rem;
+    height: 28rem;
+    @include shadow;
+    padding: 2rem 3rem;
+    margin-top: 4rem;
+    border-radius: 0px;
+}
+
+.loginForm {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 25rem;
+    padding-left: 2rem;
+}
+
+.loginForm button {
+    width: 10rem;
+    margin: 1.3rem 0;
+}
+
+.loginForm .r-form input {
+    padding: .8rem .5rem;
+}
+
+.signForm,
+.signupHead {
+    padding-left: 2rem;
+}
+
+.signupHead {
+    color: $main;
+}
+
+.loginHead {
+    color: $main;
+    padding-bottom: 1rem;
+}
+
+.r-img {
+    @include flex;
+    flex-direction: column;
+}
+
+
+.r-form {
+    display: flex;
+    align-items: flex-end;
+}
+
+.r-form input {
+    padding: .6rem .5rem;
+    border: none;
+    border-bottom: 2px solid $main;
+    box-shadow: none;
+    border-radius: 0px;
+    width: 18rem;
+
+    &:hover {
+        box-shadow: none;
+    }
+}
+
+.signForm .form-group {
+    margin: 1.5rem 0 !important;
+}
+
+.iconS {
+    font-size: 1.6rem;
+    color: $main;
+    margin-right: 1.3rem;
+}
+
+.fa-mobile {
+    margin-right: 1.5rem;
+}
+
+.em {
+    margin-right: 1.2rem;
+}
+
+.btnR {
+    margin: 1rem 0;
+    border-radius: 0px;
+}
+
+.gologin {
+    font-size: 1.3rem;
+    color: $main;
+
+    &:hover {
+        color: $gray;
+        text-decoration: none;
+    }
+}
+
+/* hero section */
+.hero {
+    padding-top: 4rem;
+    width: 100%;
+    height: 100vh;
+    background-color: #E8F3D6;
+    clip-path: polygon(50% 0%, 100% 0, 100% 0, 100% 100%, 76% 87%, 48% 97%, 26% 87%, 0 99%, 0 0, 20% 0);
+}
+
+.imgSec {
+    height: inherit;
+    @include flex;
+}
+
+.heroSec {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.figureImg {
+    width: 40rem;
+    height: 43rem;
+}
+
+.heroImg {
+    width: 100%;
+    height: 100%;
+}
+
+.heroSec h1,
+h3,
+button {
+    @include navfont;
+}
+
+.heroSec h1 {
+    font-size: 3rem;
+    font-family: 'Great Vibes', cursive;
+}
+
+.heroSec p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.heroSec span {
+    color: $main;
+
+}
+
+.heroSec button {
+    border-radius: 0px;
+    color: $main;
+    background-color: transparent;
+    border: 2px solid $main;
+    padding: 1rem 4rem !important;
+    font-size: 1.4rem !important;
+    @include navfont;
+
+
+}
+
+.msg {
+    transition: all 0.2s linear !important;
+    color: white !important;
+    font-size: 1.2rem;
+    padding: .2rem .5rem;
+    border-radius: 0px !important;
+}
+
+.heroSec .userskill {
+    font-size: 3.6rem;
+    margin-top: 1rem;
+    margin-bottom: 1.3rem;
+}
+
+.marquee {
+    display: block;
+    font-size: 1rem;
+    opacity: 0.4;
+    padding: .4rem 0;
+}
+
+/* contact css*/
+
+.contactDetails {
+    margin-top: 0rem;
+}
+
+.contact {
+
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.bio {
+    @include flexstart;
+    @include shadow;
+    margin: 3rem 1rem;
+    padding: 1.2rem 1.4rem;
+}
+
+.biodetails {
+    margin-left: 2rem;
+}
+
+.c-icon {
+    font-size: 1.5rem;
+    color: $main;
+}
+
+.title {
+    font-weight: bold;
+    color: $main;
+}
+
+.title,
+.text {
+    font-size: 1.2rem;
+    margin: .2rem 0;
+}
+
+.text {
+    color: $gray;
+}
+
+.personalBio {
+    display: flex;
+}
+
+.contact {
+    @include shadow;
+    padding: 3rem;
+    width: 55%;
+    @include flex;
+}
+
+.form-head {
+    color: $main;
+    margin: 0 .5rem;
+    margin-bottom: 1rem;
+}
+
+.personalBio .form-group input {
+    width: 17rem;
+    padding: .8rem .8rem !important;
+    margin: 0 .5rem;
+    border-radius: 0px;
+}
+
+.contact textarea {
+    padding: .8rem .8rem !important;
+    margin: 1rem .5rem;
+    width: 53rem;
+    border-radius: 0px;
+}
+
+.contact button {
+    margin: 0 .5rem;
+    margin-top: .7rem;
+}
+
+a {
+    color: black;
+}
+
+/* about */
+.about {
+    width: 100%;
+    height: 90vh;
+    @include flex;
+    margin-top: 6rem;
+}
+
+//msg
+
+
+
+.aboutPart {
+    width: 60%;
+    @include shadow;
+    padding: 3rem;
+}
+
+.abouthim {
+    margin-top: 1rem;
+}
+
+.abouthim p .nav-link {
+    font-size: 1.2rem;
+    color: black !important;
+    margin: 0rem 0;
+
+    &:hover {
+        color: $main !important;
+    }
+}
+
+.name {
+    font-size: 2.5rem;
+}
+
+.skills {
+    @include comman1(1.1rem);
+    margin-bottom: 1rem;
+}
+
+.rankigs {
+    @include comman1(.9rem);
+}
+
+.profile {
+    width: 12rem;
+    height: 12rem;
+}
+
+.profile img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.persnal-info {
+    @include flexbet;
+}
+
+.toggleData {
+    margin-top: 2rem;
+}
+
+.tab-content {
+    padding: 1rem 0rem;
+}
+
+.aboutTab .nav-link {
+    color: $main !important;
+    font-size: 1.3rem;
+    font-weight: 500;
+
+    &:hover {
+        color: $main !important;
+    }
+}
+
+.borderless td,
+.borderless th {
+    border: none;
+}
+
+td {
+    font-size: 1.1rem;
+}
+
+.edit {
+    border-radius: 0px;
+}
+
+/* 404 */
+.notFound {
+    width: 100%;
+    height: 100vh;
+    @include flex;
+    flex-direction: column;
+}
+
+.notf {
+    width: 35rem;
+    height: 35rem;
+}
+
+.notf img {
+    width: 100%;
+    height: 100%;
+}
+
+.notFound h3 {
+    font-weight: bold;
+    word-spacing: .2rem;
+}
+
+//services section
+
+.services {
+    margin-bottom: 8rem;
+}
+
+.services>h2 {
+    margin-top: 2rem;
+    font-size: 3.5rem;
+    color: $main;
+}
+
+.services>p {
+    margin-top: .5rem;
+    font-size: 1.2rem;
+    color: $gray;
+}
+
+.mycard {
+    border: none;
+    @include flex;
+    margin-top: 5rem;
+}
+
+.serviceIcon {
+    width: 15rem;
+    height: 15rem;
+    background-color: #e4b366;
+    border-radius: 50%;
+    @include flex;
+}
+
+.s2 {
+    background-color: #d84f0a;
+}
+
+.in2 {
+    background-color: #eb5b13 !important;
+}
+
+.s3 {
+    background-color: #a21010;
+}
+
+.in3 {
+    background-color: #a51c1c !important;
+}
+
+.inside {
+    width: 11rem;
+    height: 11rem;
+    background-color: #e7bb74;
+    border-radius: 50%;
+    @include flex;
+    flex-direction: column;
+}
+
+.sIcon {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: .6rem;
+}
+
+
+
+.inside p {
+    color: white;
+    letter-spacing: .2rem;
+}
+
+.mycard>p {
+    letter-spacing: .1rem;
+    text-align: center;
+    margin-top: 1.9rem;
+    font-size: 1.1rem;
+    color: $gray;
+}
+
+// nature section
+
+.weather {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    background: url("../components/img/sunrise.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.weather .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(151, 155, 151);
+    opacity: 0.5;
+}
+
+
+.dataWeather {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    @include flex;
+    flex-direction: column;
+}
+
+.dataWeather h2 {
+    font-size: 5rem;
+    color: $white;
+    margin: 1rem 0;
+    @include pop;
+    font-weight: 500;
+}
+
+.dataWeather p {
+    font-size: 1.1rem;
+    color: $white;
+    letter-spacing: 1px;
+}
+
+.hero-btn {
+    border: 1px solid $white;
+    color: $white;
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    margin: 1rem 0;
+    @include pop;
+    font-weight: bold;
+
+    &:hover {
+        color: black;
+        background-color: $white;
+    }
+}
+
+//latest section start
+
+.lat h3 {
+    text-align: center;
+    color: white;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-size: 4rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.latest {
+    width: 100%;
+    height: 60rem;
+    position: relative;
+    background: linear-gradient(rgba(19, 19, 19, 0.897), rgba(94, 94, 94, 0.753)), url("../components/img/latest.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.lat {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-left: 12rem;
+    padding-right: 12rem;
+}
+
+
+.project {
+    width: 24rem;
+    height: 22rem;
+    margin: 1.5rem 0;
+    background-color: white;
+    @include flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 4px;
+    position: relative;
+}
+
+.visit {
+    position: absolute;
+    top: 0rem;
+    left: -1rem;
+    right: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.visit a {
+    text-decoration: none;
+    color: white;
+    background-color: $main;
+    padding: 1rem 1rem;
+    border-radius: 50% !important;
+}
+
+.issue {
+    display: flex;
+    justify-content: center;
+
+}
+
+.icons {
+    border-radius: 50%;
+}
+
+.icons i {
+    font-size: 2.6rem;
+    padding: 1.3rem 1.5rem;
+    color: $main;
+}
+
+.project .text {
+    font-size: 2rem;
+    margin: 1.1rem 0;
+    color: $lighblack;
+}
+
+.project .des {
+    font-size: 1rem;
+    text-align: center;
+    color: $gray;
+}
+
+
+//footer start
+.footer {
+    background-color: white;
+    padding: 4rem 0;
+}
+
+.footerPart1 {
+    @include flexbet;
+
+}
+
+.logo {
+    font-size: 2.1rem;
+    color: $black;
+    font-weight: 500;
+    @include logoFont;
+    text-transform: capitalize;
+    color: $main;
+}
+
+.logofooter p {
+    font-size: 1.2rem;
+
+}
+
+.social i {
+    font-size: 2rem;
+    margin: 1.5rem 1rem;
+    // background-color: #befcc8;
+    padding: 1rem;
+    border: 1.3px solid $black;
+    transition: all 0.2s linear;
+    border-radius: 50%;
+
+
+    &:hover {
+        color: white;
+        background-color: $main;
+        border: 1.3px solid transparent;
+    }
+}
+
+.footcon {
+    @include flex;
+    flex-direction: column;
+}
+
+.lastf {
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    color: gray;
+}
+
+.footNav {
+    @include flex;
+}
+
+.footNav li {
+    list-style: none;
+}
+
+.footNav li a {
+    list-style: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: $lighblack;
+
+    &:hover {
+        color: $main;
+    }
+}
+
+.footerPart1 {
+    padding-bottom: 1.3rem;
+    border-bottom: 1px solid rgb(182, 181, 181);
+}
+
+.footlogo {
+    font-size: 3rem;
+    text-transform: capitalize;
+    @include logoFont;
+    margin: 2rem 0;
+}
+
+.footNav {
+    margin: 1.5rem 0;
+}
+
+.loader
+{
+    background-color: black;
+    @include flex;
+}
+
+.loader img{
+    width: 5rem;
+    height: 5rem;
+}
+
+//loader
+
+.load
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  position: fixed;
+}

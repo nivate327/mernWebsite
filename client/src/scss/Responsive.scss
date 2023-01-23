@@ -1,0 +1,626 @@
+//large device
+@import "_mixin.scss";
+@media(max-width:1440px)
+{
+    .hero
+    {
+        padding-top: 12rem !important;
+    }
+
+
+    //weather
+    .dataWeather h2
+    {
+        text-align: center;
+    }
+
+    .personalBio .form-group input {
+        width: 17rem;
+    }
+
+    .contact
+    {
+        width: 45%;
+    }
+
+    .contactDetails {
+        margin-top: 11rem;
+    }
+
+}
+
+@media(max-width:1200px)
+{
+    .contactDetails {
+        margin-top: 6rem;
+    }
+
+    .contact
+    {
+        width: 58%;
+    }
+
+    .hero
+    {
+        padding-top: 4rem !important;
+    }
+}
+
+@media(max-width:1024px)
+{
+    .contact
+    {
+        width: 65%;
+    }
+}
+
+@media(max-width:980px)
+{
+    //contact
+    .personalDetails
+    {
+        padding: 0 8rem;
+    }
+
+    .bio
+    {
+        margin: 1rem;
+    }
+
+    .hero
+    {
+        padding-top: 12rem !important;
+    }
+
+    .personalBio
+    {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .personalBio .form-group input {
+        width: 40rem;
+    }
+
+    .contact textarea {
+        width: 40rem;
+    }
+
+    .contact{
+        width: 69%;
+    }
+
+    .lat
+    {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+     //navbar
+     .hamburger
+     {
+         font-size: 2rem !important;
+
+     }
+
+     .navbar-nav .nav-item a
+     {
+        text-align: center;
+     }
+
+     //about
+     .aboutPart{
+        width:60rem;
+     }
+
+     .nav-item .signup {
+        color: white;
+        width: 8.7rem;
+        margin:1.3rem auto;
+        
+    }
+
+    
+}
+
+@media(max-width:600px)
+{
+    .contact{
+        width: 65%;
+    }
+
+    .personalBio .form-group input {
+        width: 30rem;
+    }
+
+    .contact textarea {
+        width: 30rem;
+    }
+
+    .contactDetails {
+        margin-top: 8rem;
+    }
+
+    .hero{
+        height: 67rem;
+       
+    }
+}
+
+@media(max-width:767px)
+{
+
+     //about
+     .aboutPart{
+        width:40rem;
+        margin: 4rem 0;
+     }
+
+     .about
+     {
+        height: 90rem;
+     }
+
+     .profile {
+        width: 15rem;
+        height: 14rem;
+    } 
+
+    .abouthim
+    {
+        margin: 2rem 0;
+    }
+
+    .persnal-info
+    {
+        @include flexbet;
+        align-items: center;
+        margin: 2rem 0;
+        
+    }
+
+    .pi
+    {
+        border-top: 1px solid rgb(196, 196, 196);
+    }
+
+    .toggleData
+    {
+        margin: 3rem 0;
+    }
+
+    .abouthim p{
+        text-align: center;   
+    }
+
+     .profile
+     {
+        margin: auto;
+        display: block;
+     }
+   
+    .hero
+    {
+        padding-top: 12rem !important;
+        clip-path:none;
+    }
+
+
+    .heroSec
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imgSec, .figureImg
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+    .heroSec .userskill
+    {
+       font-size: 2.5rem;
+       margin-top: .6rem;
+       margin-bottom: .6rem;
+    }
+
+    .heroSec p
+    {
+       text-align: center;
+       margin-bottom: .5rem;
+    }
+
+    .heroSec .aboutme
+    {
+       font-size: .5rem;
+    }
+
+    
+    .heroImg
+    {
+        width: 32rem;
+        height: 32rem;
+    }
+
+    .heroSec p {
+        margin: 1rem;
+      }
+
+
+    .personalBio
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    //services 
+
+    .services
+    {
+        padding-top: 3rem;
+    }
+
+    .services .row
+    {
+        @include flex;
+    }
+
+    .services h2, .services p
+    {
+        text-align: center;
+    }
+
+    //weather
+    .dataWeather h2
+    {
+        text-align: center;
+        font-size: 4rem;
+    }
+
+
+    //login
+    .signUpform
+    {
+        height: 77rem;
+        margin-top: 3rem;
+    }
+
+    .r-form input
+    {
+        width:23rem;
+    }
+
+    .r-form
+    {
+        margin: 1rem 0;
+    }
+
+    .loginForm button
+    {
+        margin: 1.7rem 0;
+    }
+
+    .loginHead
+    {
+        padding-bottom: 0rem;
+    }
+
+    .login
+    {
+        height: 60rem;
+        width: 36rem;
+    }
+
+     //signup
+     .signupdata
+     {
+         height: 93rem;
+         margin-top: 3rem;
+     }
+ 
+     .r-form input
+     {
+         width:23rem;
+     }
+ 
+     .r-form
+     {
+         margin: 1rem 0;
+     }
+ 
+     .signForm button
+     {
+         margin: 1.7rem 0;
+     }
+ 
+     .loginHead
+     {
+         padding-bottom: 0rem;
+     }
+ 
+     .ragister
+     {
+         height: 80rem;
+         width: 36rem;
+     }
+
+     .signForm
+     {
+        @include flex;
+        flex-direction: column;
+        padding-left: 1rem;
+     }
+
+}
+
+
+@media(max-width:480px)
+{
+    //weather
+    .weather{
+        height: 62vh;
+    }
+
+    .personalDetails
+    {
+        padding: 0 2rem;
+    }
+
+    .contact{
+        width: 86%;
+    }
+
+    .bio
+    {
+        margin: 1rem;
+    }
+
+    .hero{
+        height: 72rem;
+       
+    }
+
+
+   .latest
+   {
+    height: 162rem;
+   }
+
+   .imgSec, .figureImg
+   {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+
+
+    //about
+    .aboutPart{
+        width:35rem;
+     }
+
+   
+     .loginForm
+     {
+         padding-left: 1rem;
+     }
+
+     .login
+     {
+        width: 34rem;
+     }
+
+}
+
+
+@media(max-width:380px)
+{
+    .hero{
+        height: 72rem;
+       
+    }
+     
+    .heroImg
+    {
+        width: 28rem;
+        height: 28rem;
+    }
+
+    .heroSec .userskill
+    {
+       text-align: center;
+       margin: .3rem 0;
+    }
+
+    .heroSec p
+    {
+       text-align: center;
+      margin-bottom: 2rem 0 !important;
+    }
+
+    .personalBio .form-group input {
+        width: 25rem;
+    }
+
+    .contact textarea {
+        width: 25rem;
+    }
+
+    //footer
+    .lastf
+    {
+        text-align: center;
+    }
+
+    
+   
+
+    //about
+    .aboutPart{
+        width:32rem;
+     }
+
+     .toggleData
+     {
+        margin-bottom: 0;
+     }
+
+     .login
+     {
+         height: 56rem;
+         width: 30rem;
+     }
+ 
+     .signUpform
+     {
+         height: 70rem;
+         margin-top: 3rem;
+     }
+ 
+     .r-form input
+     {
+         width:20rem;
+     }
+ 
+     .r-form
+     {
+         margin: 1rem 0;
+     }
+ 
+     .loginForm
+     {
+         padding-left: 1rem;
+     }
+
+     //signup
+     .signupdata
+     {
+         height: 93rem;
+         margin-top: 3rem;
+     }
+ 
+     .r-form input
+     {
+         width:23rem;
+     }
+ 
+     .r-form
+     {
+         margin: 1rem 0;
+     }
+ 
+     .signForm button
+     {
+         margin: 1.7rem 0;
+     }
+ 
+     .loginHead
+     {
+         padding-bottom: 0rem;
+     }
+ 
+     .ragister
+     {
+         height: 80rem;
+         width: 34rem;
+     }
+
+     .signForm
+     {
+        @include flex;
+        flex-direction: column;
+        padding-left: 0rem;
+     }
+
+     .notf {
+        width: 30rem;
+        height: 30rem;
+    }
+
+}
+
+@media(max-width:320px)
+{
+
+    .hero{
+        height: 74rem;
+       
+    }
+
+    .personalBio .form-group input {
+        width: 20rem;
+    }
+
+    //about
+    .aboutPart{
+        width:27rem;
+     }
+
+    .contact textarea {
+        width: 20rem;
+    }
+
+    .contact{
+        width: 81%;
+    }
+
+    .form-head {
+        margin-bottom: 2rem;
+    }
+
+    .footNav
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footNav .nav-item .nav-link
+    {
+        margin: .4rem 0;
+    }
+
+    .login
+    {
+        height: 52rem;
+        width: 28rem;
+    }
+
+    .signUpform
+    {
+        height: 64rem;
+        margin-top: 3rem;
+    }
+
+    .r-form input
+    {
+        width:19rem;
+    }
+
+    .loginForm
+    {
+        padding-left: 0;
+    }
+
+   //signup
+    .ragister
+    {
+        height: 75rem;
+        width: 29rem;
+    }
+
+    .signupdata
+     {
+         height: 95rem;
+         margin-top: 3rem;
+     }
+
+     .signupHead
+     {
+        margin-top: 1rem;
+     }
+}
+
