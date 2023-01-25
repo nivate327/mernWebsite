@@ -28,7 +28,7 @@ const Placearr=[
         icon:"fa-file",
         about:`Portfolio website is build using react and all frontend technologies
          we see everthing about me...`,
-         link:"https://github.com/nivate327/PortfolioWebsite"
+         link:"https://myportfoliowebsite.netlify.app/"
     },
     {
         text:"Notes Website",
@@ -42,7 +42,7 @@ const Placearr=[
         icon:"fa-list",
         about:`ToDo list is build using react and all frontend technologies
          we can add our todays task and clear after compliation.`,
-         link:"https://github.com/nivate327/ToDo"
+         link:"https://mytodowebsite.netlify.app/"
     },
    
 ]
