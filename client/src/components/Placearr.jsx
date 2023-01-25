@@ -35,7 +35,7 @@ const Placearr=[
         icon:"fa-note-sticky",
         about:`Notes website is build using react and all frontend technologies
          we can important take notes on this website.`,
-        link:"https://github.com/nivate327/Notes"
+        link:"https://mynoteswebsite.netlify.app/"
     },
     {
         text:"ToDo list",
