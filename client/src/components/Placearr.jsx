@@ -28,7 +28,7 @@ const Placearr=[
         icon:"fa-file",
         about:`Portfolio website is build using react and all frontend technologies
          we see everthing about me...`,
-         link:"https://myportfoliowebsite.netlify.app/"
+         link:"https://portfoliorohanweb.netlify.app/"
     },
     {
         text:"Notes Website",
