@@ -24,11 +24,11 @@ const Placearr=[
          link:"https://nivate327.github.io/CALCULATOR---JS/",
     },  
     {
-        text:"PortFolio",
-        icon:"fa-file",
-        about:`Portfolio website is build using react and all frontend technologies
-         we see everthing about me...`,
-         link:"https://portfoliorohanweb.netlify.app/"
+        text:"Tech News",
+        icon:"fa-newspaper",
+        about:`Technews website is build using react and all frontend technologies
+         we can search latest news`,
+         link:"https://newstechweb.netlify.app/"
     },
     {
         text:"Notes Website",
