@@ -26,7 +26,7 @@ const Latestwork = () => {
                                         <p className="des">{val.about}</p>
 
                                         <div className="visit">
-                                            <a href={val.link}> visit </a>
+                                            <a href={val.link} target="_blank"> visit </a>
                                         </div>
                                     </div>
                                 </div>
